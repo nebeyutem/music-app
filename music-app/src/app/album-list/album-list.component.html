@@ -1,0 +1,16 @@
+<h1 class="fade-in">New Releases</h1>
+
+<body class="fade-in">
+
+    <section>
+        <div class="grid-view three-column">
+            <div *ngFor="let album of response.albums.items.slice(0, 9)" class="content-option">
+                <h3>{{album.name}}</h3>
+                <img [src]="album.images[0]?.url" alt="{{album.name}} album image" width="250" height="250" class="bordered-image">
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+

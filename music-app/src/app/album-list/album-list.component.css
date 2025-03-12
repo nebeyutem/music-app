@@ -1,0 +1,30 @@
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content-option {
+    text-align: center;
+}
+
+.bordered-image {
+    border: 5px solid rgb(62, 149, 211);
+    padding: 10px;
+    background-color: rgb(9, 155, 184);
+}
+
+h1 {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in; /* Set the animation duration and easing function */
+} 
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 2.5s ease-in; /* Set the animation duration and easing function */
+}
