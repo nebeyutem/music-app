@@ -4,7 +4,8 @@
 
     <section>
         <div class="grid-view three-column">
-            <div *ngFor="let album of response.albums.items.slice(0, 9)" class="content-option">
+            <!-- // Look at how clean this is since you're doing the slice in the TS file :)-->
+            <div *ngFor="let album of albumsToConsider" class="content-option">
                 <h3>{{album.name}}</h3>
                 <img [src]="album.images[0]?.url" alt="{{album.name}} album image" width="250" height="250" class="bordered-image">
             </div>
