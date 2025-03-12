@@ -20,7 +20,7 @@ export class AlbumListComponent {
       .then(album => {
       console.log(album)
       this.response = album;
-      // The JSON object returned by this function is named 'album'
+      // The JSON object returned by this function is named 'album'. to be used to display albums
       });
   }
 }
